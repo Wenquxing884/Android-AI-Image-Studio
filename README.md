@@ -20,10 +20,16 @@
 
 ## 📸 应用截图
 
-![首页](screenshots/home.jpg)
-![菜单](screenshots/menu.jpg)
-![历史会话](screenshots/history.jpg)
-![设置](screenshots/settings.jpg)
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/home.jpg" width="200"/><br/>首页</td>
+    <td align="center"><img src="screenshots/history.jpg" width="200"/><br/>历史会话</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/menu.jpg" width="200"/><br/>侧边菜单</td>
+    <td align="center"><img src="screenshots/settings.jpg" width="200"/><br/>设置</td>
+  </tr>
+</table>
 
 ## 🛠️ 技术栈
 
