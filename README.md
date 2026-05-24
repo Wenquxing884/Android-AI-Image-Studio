@@ -74,9 +74,7 @@ cd Android-AI-Image-Studio
 | ------------ | ------------------ | ------------------------ |
 | API 基础地址 | API 服务的基础 URL | `https://api.openai.com` |
 | API Key      | 你的 API 密钥      | `sk-xxxxxxxxxxxx`        |
-| 模型名称     | 使用的 AI 模型     | `dall-e-3`               |
-| 图片尺寸     | 生成图片的尺寸     | `1024x1024`              |
-| 图片质量     | 生成图片的质量     | `standard` / `hd`        |
+| 模型名称     | 使用的 AI 模型     | `gpt-image-2`            |
 
 ### 4. 构建运行
 
