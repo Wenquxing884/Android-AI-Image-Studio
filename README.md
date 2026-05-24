@@ -50,6 +50,10 @@
 
 ## 🚀 快速开始
 
+## 📥 下载
+
+[点击此处下载最新版本 APK](https://github.com/Wenquxing884/Android-AI-Image-Studio/releases/latest)
+
 ### 1. 克隆项目
 
 ```bash
@@ -107,14 +111,8 @@ app/src/main/java/com/example/mynavigation/drawer/
     │   ├── HistoryAdapter.java    # 历史记录适配器
     │   ├── ChatHistoryStore.java  # 历史记录存储
     │   └── ChatSession.java       # 会话数据模型
-    ├── gallery/
-    │   ├── GalleryFragment.java   # 作品展示页面
-    │   └── GalleryViewModel.java  # 作品 ViewModel
-    ├── settings/
-    │   └── SettingsFragment.java  # API 设置页面
-    └── slideshow/
-        ├── SlideshowFragment.java # 幻灯片页面
-        └── SlideshowViewModel.java
+    └── settings/
+        └── SettingsFragment.java  # API 设置页面
 ```
 
 ## 🤝 贡献

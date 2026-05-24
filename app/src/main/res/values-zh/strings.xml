@@ -7,6 +7,4 @@
     <string name="nav_header_desc">导航头部</string>
     <string name="action_settings">设置</string>
     <string name="menu_home">首页</string>
-    <string name="gallery_fragment_text">这是图库片段</string>
-    <string name="slideshow_fragment_text">这是幻灯片片段</string>
 </resources>

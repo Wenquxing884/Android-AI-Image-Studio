@@ -52,7 +52,4 @@
     <string name="settings_size_512">512x512</string>
     <string name="settings_size_256">256x256</string>
 
-    <!-- 未使用但被ViewModel引用的资源 -->
-    <string name="gallery_fragment_text">This is gallery fragment</string>
-    <string name="slideshow_fragment_text">This is slideshow fragment</string>
 </resources>
