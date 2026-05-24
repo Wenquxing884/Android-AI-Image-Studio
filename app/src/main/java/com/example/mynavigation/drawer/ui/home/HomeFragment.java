@@ -70,14 +70,26 @@ public class HomeFragment extends Fragment {
         setupInputArea();
         observeViewModel();
 
-        // 恢复当前进行中的会话（如果有）
-        ChatSession currentSession = historyStore.loadCurrentSession();
-        if (currentSession != null && !currentSession.getMessages().isEmpty()) {
-            currentSessionId = currentSession.getSessionId();
-            restoreSessionFromData(currentSession);
+        // 优先从 ViewModel 恢复（切换页面后返回时）
+        if (!viewModel.getSavedMessages().isEmpty()) {
+            currentSessionId = viewModel.getSavedSessionId();
+            chatAdapter.setMessages(viewModel.getSavedMessages());
+            selectedImageBitmap = viewModel.getSavedSelectedImage();
+            if (selectedImageBitmap != null) {
+                binding.layoutPreview.setVisibility(View.VISIBLE);
+                binding.ivPreview.setImageBitmap(selectedImageBitmap);
+            }
+            scrollToBottom();
         } else {
-            currentSessionId = ChatHistoryStore.generateSessionId();
-            chatAdapter.addMessage(ChatMessage.system("欢迎使用 AI 生图！输入提示词即可生成图片，也可上传或引用图片进行修图"));
+            // 否则从存储恢复（冷启动时）
+            ChatSession currentSession = historyStore.loadCurrentSession();
+            if (currentSession != null && !currentSession.getMessages().isEmpty()) {
+                currentSessionId = currentSession.getSessionId();
+                restoreSessionFromData(currentSession);
+            } else {
+                currentSessionId = ChatHistoryStore.generateSessionId();
+                chatAdapter.addMessage(ChatMessage.system("欢迎使用 AI 生图！输入提示词即可生成图片，也可上传或引用图片进行修图"));
+            }
         }
 
         // 监听新建会话请求：将当前会话存入历史，然后清空
@@ -539,7 +551,12 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onDestroyView() {
-        // 离开时保存当前会话到"进行中"，不进入历史
+        // 保存到 ViewModel（快速恢复用）
+        viewModel.setSavedMessages(chatAdapter.getMessages());
+        viewModel.setSavedSessionId(currentSessionId);
+        viewModel.setSavedSelectedImage(selectedImageBitmap);
+
+        // 同时保存到存储（冷启动恢复用）
         saveCurrentSession();
         super.onDestroyView();
         binding = null;

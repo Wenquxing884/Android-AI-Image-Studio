@@ -48,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        // 监听导航目的地变化，更新菜单可见性
+        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
+            if (newChatItem != null) {
+                newChatItem.setVisible(destination.getId() == R.id.nav_home);
+            }
+        });
+
         // 选择菜单项后自动关闭抽屉
         navigationView.setNavigationItemSelectedListener(item -> {
             boolean handled = NavigationUI.onNavDestinationSelected(item, navController);

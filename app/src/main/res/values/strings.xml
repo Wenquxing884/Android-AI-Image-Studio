@@ -9,7 +9,6 @@
 
     <string name="menu_home">AI 生图</string>
     <string name="menu_history">历史会话</string>
-    <string name="menu_my_works">我的作品</string>
     <string name="menu_settings">设置</string>
     <string name="ai_new_chat">新会话</string>
     <string name="ai_new_chat_started">已开始新会话</string>
@@ -39,17 +38,8 @@
     <string name="settings_api_key">API Key</string>
     <string name="settings_api_key_hint">输入你的 API Key</string>
     <string name="settings_model">模型名称</string>
-    <string name="settings_model_hint">例如 dall-e-3</string>
-    <string name="settings_image_size">图片尺寸</string>
-    <string name="settings_image_quality">图片质量</string>
+    <string name="settings_model_hint">例如 gpt-image-1</string>
     <string name="settings_save">保存设置</string>
     <string name="settings_saved">设置已保存</string>
-    <string name="settings_quality_standard">standard</string>
-    <string name="settings_quality_hd">hd</string>
-    <string name="settings_size_1024">1024x1024</string>
-    <string name="settings_size_1792">1792x1024</string>
-    <string name="settings_size_1024x1792">1024x1792</string>
-    <string name="settings_size_512">512x512</string>
-    <string name="settings_size_256">256x256</string>
 
 </resources>

@@ -13,21 +13,22 @@
 - 🎨 **文生图**：输入文字描述，AI 自动生成图片
 - 🖼️ **图生图**：支持从相册选择或引用聊天中的图片进行 AI 编辑
 - 🔄 **5 步智能重试**：图生图采用 5 种不同的 API 调用策略，自动降级以提高成功率
-- 💬 **历史会话**：保存聊天记录，随时回顾和继续创作
-- 📁 **作品管理**：查看和管理所有已生成的图片
+- 💬 **历史会话**：保存聊天记录，回顾已生成的作品，随时继续创作
 - ⚙️ **灵活配置**：支持自定义 API 地址、模型、图片尺寸和质量
-- 🌐 **多语言支持**：原生中文 UI
+- 🌐 **语言支持**：原生中文 UI
 
 ## 📸 应用截图
 
 <table>
   <tr>
-    <td align="center"><img src="screenshots/home.jpg" width="200"/><br/>首页</td>
-    <td align="center"><img src="screenshots/history.jpg" width="200"/><br/>历史会话</td>
+    <td align="center"><img src="screenshots/home.jpg" width="180"/><br/>AI 对话</td>
+    <td align="center"><img src="screenshots/home-2.jpg" width="180"/><br/>图生图</td>
+    <td align="center"><img src="screenshots/history.jpg" width="180"/><br/>历史会话</td>
   </tr>
   <tr>
-    <td align="center"><img src="screenshots/menu.jpg" width="200"/><br/>侧边菜单</td>
-    <td align="center"><img src="screenshots/settings.jpg" width="200"/><br/>设置</td>
+    <td align="center"><img src="screenshots/menu.jpg" width="180"/><br/>侧边菜单</td>
+    <td align="center"><img src="screenshots/settings.jpg" width="180"/><br/>设置</td>
+    <td></td>
   </tr>
 </table>
 
@@ -50,7 +51,7 @@
 
 ## 🚀 快速开始
 
-## 📥 下载
+### 📥 下载
 
 [点击此处下载最新版本 APK](https://github.com/Wenquxing884/Android-AI-Image-Studio/releases/latest)
 
@@ -63,7 +64,7 @@ cd Android-AI-Image-Studio
 
 ### 2. 用 Android Studio 打开项目
 
-使用 Android Studio (建议最新稳定版) 打开项目根目录，等待 Gradle 同步完成。
+使用 Android Studio（建议最新稳定版）打开项目根目录，等待 Gradle 同步完成。
 
 ### 3. 配置 API
 

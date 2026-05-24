@@ -55,7 +55,6 @@
             app:boxCornerRadiusBottomStart="8dp"
             app:boxCornerRadiusBottomEnd="8dp"
             app:endIconMode="password_toggle">
-            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_api_key"
@@ -65,6 +64,7 @@
                 android:textColor="@android:color/black"
                 android:textColorHint="#FF999999" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,8 +76,6 @@
             app:boxCornerRadiusTopEnd="8dp"
             app:boxCornerRadiusBottomStart="8dp"
             app:boxCornerRadiusBottomEnd="8dp">
-            app:boxCornerRadiusBottomStart="8dp"
-            app:boxCornerRadiusBottomEnd="8dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_model"
@@ -87,40 +85,8 @@
                 android:textColor="@android:color/black"
                 android:textColorHint="#FF999999" />
         </com.google.android.material.textfield.TextInputLayout>
-        <!-- 图片尺寸 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/settings_image_size"
-            android:textSize="14sp"
-            android:textColor="#FF666666"
-            android:layout_marginBottom="4dp" />
 
-        <Spinner
-            android:id="@+id/spinner_size"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginBottom="12dp"
-            android:background="@drawable/bg_input_rounded"
-            android:popupBackground="@android:color/white" />
-
-        <!-- 图片质量 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/settings_image_quality"
-            android:textSize="14sp"
-            android:textColor="#FF666666"
-            android:layout_marginBottom="4dp" />
-
-        <Spinner
-            android:id="@+id/spinner_quality"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginBottom="24dp"
-            android:background="@drawable/bg_input_rounded"
-            android:popupBackground="@android:color/white" />
-
+        <!-- 保存按钮 -->
         <!-- 保存按钮 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_save"
