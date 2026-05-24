@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mynavigation.drawer.databinding.ActivityMainBinding;
 import com.example.mynavigation.drawer.ui.home.HomeFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -58,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
         // 点击 GitHub 跳转项目地址
         findViewById(R.id.nav_footer_github).setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.baidu.com"));
+            Intent intent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://github.com/Wenquxing884/Android-AI-Image-Studio"));
             startActivity(intent);
             drawer.closeDrawer(androidx.core.view.GravityCompat.START);
         });
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     private void saveCurrentOnExit() {
         Fragment navHost = getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
         if (navHost != null) {
