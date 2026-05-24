@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">OhYeah</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">我想留在大家身边</string>
+    <string name="nav_header_subtitle">从过去一同迈向明天</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">AI 生图</string>
+    <string name="menu_history">历史会话</string>
+    <string name="menu_my_works">我的作品</string>
+    <string name="menu_settings">设置</string>
+    <string name="ai_new_chat">新会话</string>
+    <string name="ai_new_chat_started">已开始新会话</string>
+    <string name="ai_history_title">历史会话</string>
+    <string name="ai_history_empty">暂无历史会话</string>
+    <string name="ai_reference_from_chat">已引用聊天中的图片 ↓</string>
+    <string name="ai_image_selected">已从相册选择图片 ↓</string>
+
+    <!-- AI生图 -->
+    <string name="ai_hint_prompt">输入提示词…</string>
+    <string name="ai_send">发送</string>
+    <string name="ai_pick_image">选择图片</string>
+    <string name="ai_generating">正在生成图片…</string>
+    <string name="ai_error_no_api_key">请先在设置中配置 API Key</string>
+    <string name="ai_error_empty_prompt">请输入提示词</string>
+    <string name="ai_generated_image">生成的图片</string>
+    <string name="ai_user_prompt">提示词</string>
+    <string name="ai_reference_edit">引用修图</string>
+    <string name="ai_download">下载图片</string>
+    <string name="ai_image_preview">图片预览</string>
+    <string name="ai_download_success">图片已保存到 Pictures/AIGC 目录</string>
+    <string name="ai_download_failed">保存图片失败</string>
+    <!-- 设置 -->
+    <string name="settings_title">API 设置</string>
+    <string name="settings_base_url">API 基础地址</string>
+    <string name="settings_base_url_hint">例如 https://api.openai.com</string>
+    <string name="settings_api_key">API Key</string>
+    <string name="settings_api_key_hint">输入你的 API Key</string>
+    <string name="settings_model">模型名称</string>
+    <string name="settings_model_hint">例如 dall-e-3</string>
+    <string name="settings_image_size">图片尺寸</string>
+    <string name="settings_image_quality">图片质量</string>
+    <string name="settings_save">保存设置</string>
+    <string name="settings_saved">设置已保存</string>
+    <string name="settings_quality_standard">standard</string>
+    <string name="settings_quality_hd">hd</string>
+    <string name="settings_size_1024">1024x1024</string>
+    <string name="settings_size_1792">1792x1024</string>
+    <string name="settings_size_1024x1792">1024x1792</string>
+    <string name="settings_size_512">512x512</string>
+    <string name="settings_size_256">256x256</string>
+
+    <!-- 未使用但被ViewModel引用的资源 -->
+    <string name="gallery_fragment_text">This is gallery fragment</string>
+    <string name="slideshow_fragment_text">This is slideshow fragment</string>
+</resources>
