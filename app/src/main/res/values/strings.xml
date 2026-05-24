@@ -9,7 +9,6 @@
 
     <string name="menu_home">AI 生图</string>
     <string name="menu_history">历史会话</string>
-    <string name="menu_my_works">我的作品</string>
     <string name="menu_settings">设置</string>
     <string name="ai_new_chat">新会话</string>
     <string name="ai_new_chat_started">已开始新会话</string>

@@ -56,6 +56,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+    // 自定义输出文件名：应用名-时间戳.apk
+    applicationVariants.configureEach { variant ->
+        variant.outputs.configureEach {
+            outputFileName = "OhYeah-${new Date().format('yyyyMMdd-HHmmss')}.apk"
+        }
+    }
 }
 dependencies {
     coreLibraryDesugaring libs.desugar.jdk.libs
