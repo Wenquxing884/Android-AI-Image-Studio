@@ -74,7 +74,7 @@ cd Android-AI-Image-Studio
 | ------------ | ------------------ | ------------------------ |
 | API 基础地址 | API 服务的基础 URL | `https://api.openai.com` |
 | API Key      | 你的 API 密钥      | `sk-xxxxxxxxxxxx`        |
-| 模型名称     | 使用的 AI 模型     | `gpt-image-2`            |
+| 模型名称     | 使用的 AI 模型     | `gpt-image-1`            |
 
 ### 4. 构建运行
 
